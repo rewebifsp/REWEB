@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Corisco's Paper</title>
+    <!-- style.css é o mesmo da tela inicial (cores, logo e rodapé) -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- Topo: a logo é um botão que volta para a tela inicial (usar o mesmo em todas as telas) -->
+    <header class="cabecalho">
+        <a class="logo" href="index.html" aria-label="Voltar para a tela inicial">
+            <img class="logo-img" src="imagens/logo.png" alt="Corisco's Paper - Papelaria Criativa">
+        </a>
+    </header>
+
+    <main class="area-login">
+
+        <section class="coluna-form">
+
+            <!-- Entrar com Google: por enquanto só o desenho. A parte que funciona fica para o final -->
+            <button class="botao-google" type="button">ENTRA COM GOOGLE</button>
+
+            <p class="ou">OU</p>
+
+            <!-- Quando o João terminar o PHP, trocar o action pelo arquivo de login -->
+            <form class="form-login" action="#" method="post">
+
+                <label class="so-leitor" for="usuario">Usuário (e-mail ou telefone)</label>
+                <input class="campo" type="text" id="usuario" name="usuario"
+                    placeholder="USUÁRIO (e-mail ou telefone)" autocomplete="username" required>
+
+                <div class="campo-senha">
+                    <label class="so-leitor" for="senha">Senha</label>
+                    <input class="campo" type="password" id="senha" name="senha"
+                        placeholder="SENHA" autocomplete="current-password" required>
+
+                    <!-- Olhinho: mostra ou esconde a senha -->
+                    <button class="olho" id="olho" type="button" aria-label="Mostrar senha" aria-pressed="false">
+                        <svg viewBox="0 0 32 24" aria-hidden="true">
+                            <path d="M2 12C6 5 12 3 16 3s10 2 14 9c-4 7-10 9-14 9S6 19 2 12z" />
+                            <circle cx="16" cy="12" r="4.5" />
+                            <line class="risco" x1="4" y1="21" x2="28" y2="3" />
+                        </svg>
+                    </button>
+                </div>
+
+                <a class="link-azul esqueci" href="esqueci-senha.html">ESQUECI A SENHA</a>
+
+                <button class="botao-entrar" type="submit">ENTRAR</button>
+
+            </form>
+
+            <p class="sem-conta">NÃO TEM UMA CONTA? <a class="link-azul" href="cadastro.html">CADASTRE-SE</a></p>
+
+        </section>
+
+        <!-- Desenho da caixinha: salvar a imagem da Júlia em imagens/caixa.png -->
+        <div class="coluna-imagem">
+            <img src="imagens/caixa.png" alt="" onerror="this.parentElement.remove()">
+        </div>
+
+    </main>
+
+    <footer>
+        REWEB E CORISCO'S PAPER
+    </footer>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>
