@@ -1,0 +1,54 @@
+.conteudo-admin { 
+    width: min(900px, 92%); 
+    margin: 32px auto; 
+}
+.form-encomenda { 
+    padding: 28px; 
+    border-radius: 14px; 
+    background: #f5f9f8; 
+}
+.campos-encomenda { 
+    display: grid; 
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    gap: 16px; 
+}
+.campos-encomenda label { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 7px; 
+    font-size: 14px; 
+}
+.campos-encomenda input, .campos-encomenda textarea { 
+    width: 100%; 
+    min-height: 42px; 
+    padding: 10px 13px;
+    border: 0; 
+    border-radius: 12px; 
+    background: #d2e9e6; 
+    color: #111; 
+    font: inherit; 
+}
+.campos-encomenda textarea { resize: vertical; }
+
+.campos-encomenda .campo-largo { grid-column: 1 / -1; }
+
+.campos-encomenda .marcacao { 
+    flex-direction: row;
+    align-items: center; 
+}
+.campos-encomenda .marcacao input { 
+    width: 18px; 
+    min-height: 18px; 
+}
+.acoes-formulario { 
+    margin-top: 24px; 
+    display: flex; 
+    justify-content: center; 
+    gap: 14px; 
+}
+
+@media (max-width: 600px) { 
+    .form-encomenda { padding: 18px; } 
+    .campos-encomenda { grid-template-columns: 1fr; } 
+    .campos-encomenda .campo-largo { grid-column: auto; } 
+}

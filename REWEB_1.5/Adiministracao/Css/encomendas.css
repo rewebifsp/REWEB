@@ -1,0 +1,126 @@
+.pagina-encomendas { 
+    width: min(1300px, 96%); 
+    margin: 24px auto; 
+}
+.barra-acoes {
+    margin-bottom: 14px; 
+    display: flex; 
+    justify-content: flex-end;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+.barra-acoes a, .barra-acoes button {
+     padding: 10px 15px; 
+     border: 0; 
+     border-radius: 12px; 
+     background: #d4f6a0; 
+     color: #111; 
+     font: inherit; 
+     text-decoration: none; 
+     cursor: pointer; 
+}
+.barra-acoes button {
+     background: #c6edf0; 
+}
+.filtros-encomendas {
+     margin-bottom: 14px; 
+     display: grid; 
+     grid-template-columns: minmax(220px, 1fr) 1.4fr; 
+     gap: 12px; 
+}
+.filtros-encomendas input {
+     width: 100%; 
+     min-height: 40px; 
+     padding: 9px 12px; 
+     border: 2px solid #111; 
+     border-radius: 12px; 
+     font: inherit; 
+}
+.filtros-rapidos { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 7px; 
+}
+.filtros-rapidos button { 
+    padding: 8px 11px; 
+    border: 0; 
+    border-radius: 15px; 
+    background: #d4f6a0; 
+    font: inherit; 
+    cursor: pointer; 
+}
+.filtros-rapidos #limpar {
+     background: #ffd6d6; 
+}
+.tabela-rolagem {
+     overflow: auto; 
+     border: 1px solid #111; 
+}
+table { 
+    width: 100%; 
+    min-width: 1100px; 
+    border-collapse: collapse;
+    text-align: center; 
+    font-size: 12px; 
+}
+th, td {
+     padding: 10px 7px; 
+     border: 1px solid #111; 
+}
+th {
+     background: #fff500; 
+     text-transform: uppercase; 
+}
+tbody tr:nth-child(even) {
+     background: #e4f4d8; 
+}
+td[contenteditable="true"] {
+     outline: 2px solid #4c9cff; 
+     background: #fff; 
+}
+.pendente { 
+    background: #ff7979; 
+}
+.pago { 
+    background: #caff70; 
+}
+.acoes-linha { 
+    white-space: nowrap; 
+}
+.acoes-linha button { 
+    margin: 2px; 
+    padding: 7px 9px; 
+    border: 0; 
+    border-radius: 8px; 
+    cursor: pointer; 
+}
+.editar { background: #c6edf0; }
+
+.excluir { background: #ffb8b8; }
+
+.historico { 
+    width: min(800px, 100%); 
+    margin: 22px auto;
+    padding: 16px; 
+    background: #fff8ad; 
+    font-size: 13px; 
+}
+.historico h2 { 
+    margin: 0 0 12px; 
+    text-align: center; 
+    font-size: 14px; 
+}
+.historico p { 
+    display: flex; 
+    justify-content: space-between; 
+    gap: 12px; 
+}
+
+.botao-voltar { 
+    width: fit-content; 
+    margin: 20px auto; 
+    display: block; 
+    background: #fff8ad; 
+}
+
+@media (max-width: 700px) { .filtros-encomendas { grid-template-columns: 1fr; } .historico p { flex-direction: column; } }

@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #eef3f3;
+    color: #111;
+    font-family: Arial, sans-serif;
+}
+
+.painel-inicial {
+    min-height: 100vh;
+    padding: 55px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: min(300px, 80%);
+    height: auto;
+    margin-bottom: 55px;
+}
+
+.opcoes-admin {
+    width: min(390px, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.opcoes-admin a {
+    width: 100%;
+    min-height: 90px;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #baff68;
+    color: #111;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.opcoes-admin a:hover {
+    background: #a9ed58;
+}
+
+.opcoes-admin span {
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .painel-inicial {
+        padding-top: 45px;
+    }
+
+    .logo {
+        margin-bottom: 40px;
+    }
+
+    .opcoes-admin a {
+        min-height: 75px;
+    }
+}

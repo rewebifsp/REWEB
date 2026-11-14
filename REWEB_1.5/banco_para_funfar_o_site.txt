@@ -1,0 +1,16 @@
+create database test;
+
+CREATE TABLE `login` (
+  `id` int(11) NOT NULL,
+  `telefone` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  `data_cadastro` datetime DEFAULT current_timestamp()
+);
+
+ALTER TABLE `login`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+ALTER TABLE `login`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
