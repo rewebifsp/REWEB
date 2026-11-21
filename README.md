@@ -1,8 +1,8 @@
-# REWEB — Corisco's Paper
+ REWEB — Corisco's Paper
 
 Projeto acadêmico de loja virtual para a papelaria criativa Corisco's Paper.
 
-## Funcionalidades
+ Funcionalidades
 
 - Catálogo e pesquisa de produtos
 - Carrinho e lista de favoritos
@@ -10,14 +10,14 @@ Projeto acadêmico de loja virtual para a papelaria criativa Corisco's Paper.
 - Área administrativa para acompanhar encomendas e produtos
 - Recursos de acessibilidade com AccessibleWeb e VLibras nas páginas públicas
 
-## Tecnologias
+ Tecnologias
 
 - PHP
 - MySQL
 - HTML, CSS e JavaScript
 - XAMPP para execução local
 
-## Como executar com XAMPP
+ Como executar com XAMPP
 
 1. Instale e abra o XAMPP.
 2. Inicie **Apache** e **MySQL** no painel do XAMPP.
@@ -26,11 +26,11 @@ Projeto acadêmico de loja virtual para a papelaria criativa Corisco's Paper.
 5. Confira as credenciais locais do MySQL em `Adiministracao/conexao.php`.
 6. Abra `http://localhost/REWEB_1.10/REWEB_1.10/` no navegador.
 
-### Atenção ao banco de dados de teste
+# Atenção ao banco de dados de teste
 
 O arquivo `banco_reweb.sql` usa o banco `test` e apaga/recria as tabelas desse banco ao ser executado. Ele é destinado ao ambiente de teste; os dados existentes nessas tabelas serão substituídos.
 
-## Estrutura da versão 1.10
+ Estrutura da versão 1.10
 
 - `Adiministracao/` — páginas e arquivos da área administrativa
 - `Cadastro/` — cadastro, login e recuperação de senha
