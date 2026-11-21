@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar senha - Corisco's Paper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="Css/login.css">
+    <link rel="stylesheet" href="Css/recuperacao.css">
+</head>
+
+<body>
+    <header class="cabecalho cabecalho-recuperacao">
+        <a class="logo" href="../index.php" aria-label="Voltar para a tela inicial">
+            <img class="logo-img" src="../imagens/logo.png" alt="Corisco's Paper - Papelaria Criativa">
+        </a>
+    </header>
+
+    <main class="area-login area-recuperacao">
+        <section class="coluna-form">
+            <h1 class="titulo-recuperacao">ESQUECI A SENHA</h1>
+            <p class="instrucao-recuperacao">Informe seu e-mail ou telefone para começar a recuperação.</p>
+
+            <form class="form-login" id="formSolicitarCodigo">
+                <label class="so-leitor" for="contato">E-mail ou telefone</label>
+                <input class="campo" id="contato" name="contato" type="text"
+                    placeholder="E-MAIL OU TELEFONE" autocomplete="username" required>
+                <button class="botao-entrar" type="submit">ENVIAR CÓDIGO</button>
+            </form>
+
+            <p class="aviso-demo">Protótipo navegável: o envio real do código será conectado depois.</p>
+            <a class="link-azul voltar-login" href="login.php">VOLTAR PARA O LOGIN</a>
+        </section>
+
+        <div class="coluna-imagem">
+            <img src="../imagens/caixa.png" alt="Ilustração de uma caixa de presentes">
+        </div>
+    </main>
+
+    <footer>REWEB E CORISCO'S PAPER</footer>
+    <script src="Js/recuperacao.js"></script>
+    <!-- acessibilidades implementadas -->
+    <div data-acc-position="bottom-left"></div>
+    <script src="https://cdn.jsdelivr.net/gh/ifrederico/accessible-web-widget@1.6.3/dist/accessible-web-widget.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+</body>
+
+</html>

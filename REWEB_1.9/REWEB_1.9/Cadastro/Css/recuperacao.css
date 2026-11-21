@@ -1,0 +1,118 @@
+.cabecalho-recuperacao {
+    height: 105px;
+    padding: 15px 20px;
+}
+
+.cabecalho-recuperacao .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cabecalho-recuperacao .logo-img {
+    height: 66px;
+}
+
+.marca-texto {
+    display: flex;
+    flex-direction: column;
+    color: #111;
+}
+
+.marca-texto strong {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.marca-texto small {
+    font-family: cursive;
+    font-size: 15px;
+}
+
+.area-recuperacao {
+    min-height: 600px;
+}
+
+.titulo-recuperacao {
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.instrucao-recuperacao {
+    max-width: 370px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.aviso-demo {
+    max-width: 350px;
+    margin-top: 18px;
+    color: #555;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.reenviar-codigo,
+.voltar-login {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.campo-codigo {
+    letter-spacing: 0.3em;
+}
+
+.erro-senha {
+    width: 100%;
+    color: #b42318;
+    font-size: 13px;
+    text-align: center;
+}
+
+.mensagem-sucesso {
+    max-width: 360px;
+    margin-top: 22px;
+    padding: 16px;
+    border-radius: 12px;
+    background: #dff5dc;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.mensagem-sucesso a {
+    display: block;
+    margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+    .cabecalho-recuperacao {
+        min-height: 95px;
+    }
+
+    .cabecalho-recuperacao .logo-img {
+        height: 54px;
+    }
+
+    .marca-texto strong {
+        font-size: 17px;
+    }
+
+    .marca-texto small {
+        font-size: 13px;
+    }
+
+    .area-recuperacao {
+        min-height: 0;
+        margin: 20px auto 40px;
+    }
+}

@@ -1,0 +1,213 @@
+/* Estilo da tela de pronta entrega.
+   O topo do site vem do cabecalho.css e o resto do style.css */
+
+/* ---------- Faixa azul com o título ---------- */
+.faixa-pronta {
+    position: relative;          /* serve para colocar o funil no canto direito */
+    min-height: 100px;
+    padding: 12px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c4eef2;
+    text-align: center;
+}
+
+/* Título: a imagem "pronta entrega" (fundo transparente, então aparece o azul da faixa) */
+.titulo-pronta img {
+    height: 84px;
+    display: block;
+}
+
+/* ---------- Funil e painel do filtro ---------- */
+
+/* O funil fica no canto direito da faixa */
+.filtro {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* O <summary> é o botão do funil; tiramos a setinha padrão dele */
+.filtro summary {
+    width: 36px;
+    height: 36px;
+    display: block;
+    list-style: none;
+    cursor: pointer;
+}
+
+.filtro summary::-webkit-details-marker {
+    display: none;
+}
+
+.filtro svg {
+    width: 100%;
+    height: 100%;
+    fill: #111;
+}
+
+/* Caixinha branca que abre embaixo do funil */
+.filtro-painel {
+    position: absolute;
+    right: 0;
+    top: 46px;
+    z-index: 5;
+    width: 260px;
+    max-width: calc(100vw - 24px);
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    text-align: left;
+}
+
+.filtro-painel fieldset {
+    border: none;
+}
+
+.filtro-painel legend {
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* Cada opção: caixinha de marcar + nome do tópico (área grande para clicar) */
+.filtro-painel label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filtro-painel input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.sem-opcoes {
+    font-size: 14px;
+}
+
+.botao-aplicar {
+    width: 100%;
+    height: 44px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: #86c5ff;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botao-aplicar:hover {
+    filter: brightness(0.95);
+}
+
+.limpar-filtro {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+/* Aviso "Filtro ligado" em cima da lista de produtos */
+.aviso-filtro {
+    margin-bottom: 20px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.aviso-filtro a {
+    margin-left: 8px;
+    text-decoration: underline;
+}
+
+/* ---------- Lista de produtos ---------- */
+.pagina-pronta {
+    width: 92%;
+    max-width: 1000px;
+    min-height: 420px;
+    margin: 30px auto 60px;
+}
+
+/* Mensagem quando não há produtos */
+.sem-produtos {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Os cartões ficam lado a lado e quebram de linha quando não cabem */
+.lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cartao-produto {
+    width: 205px;
+    text-align: center;
+}
+
+.cartao-produto img {
+    width: 205px;
+    height: 205px;
+    object-fit: cover;
+    display: block;
+    background-color: #c3eef3;
+}
+
+.cartao-produto h2 {
+    margin-top: 6px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.cartao-produto .preco {
+    font-size: 14px;
+}
+
+/* Botão azul COMPRAR (igual ao da tela de favoritos) */
+.botao-comprar {
+    margin-top: 14px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: #86c5ff;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+    font-size: 18px;
+}
+
+.botao-comprar:hover {
+    filter: brightness(0.95);
+}
+
+/* ---------- Celular ---------- */
+@media (max-width: 600px) {
+
+    .faixa-pronta {
+        padding: 14px 52px;
+    }
+
+    .titulo-pronta img {
+        height: 60px;
+    }
+
+    .filtro {
+        right: 12px;
+    }
+
+    .lista-produtos {
+        justify-content: center;
+    }
+}

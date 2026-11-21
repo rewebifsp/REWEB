@@ -1,0 +1,136 @@
+.pagina-cobranca,
+.pagina-pix {
+    width: 90%;
+    max-width: 640px;
+    min-height: 460px;
+    margin: 30px auto 60px;
+    text-align: center;
+}
+
+.pagina-cobranca h1,
+.pagina-pix h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.total,
+.valor-pix {
+    margin: 10px 0 24px;
+    color: #006b3c;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Formulário de dados e entrega */
+.form-cobranca {
+    text-align: left;
+}
+
+.form-cobranca label {
+    display: block;
+    margin: 14px 0 4px;
+    font-size: 15px;
+}
+
+.form-cobranca input[type="text"],
+.form-cobranca input[type="tel"],
+.form-cobranca input[type="email"] {
+    width: 100%;
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid #111;
+    border-radius: 12px;
+    background: #fff;
+    font-size: 16px;
+}
+
+.titulo-opcao {
+    margin-top: 22px;
+    font-weight: 700;
+}
+
+.form-cobranca .opcao {
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.botao-confirmar {
+    margin: 28px auto 0;
+    width: 220px;
+    height: 46px;
+    display: block;
+    border: none;
+    border-radius: 14px;
+    background-color: #4febee;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botao-confirmar:hover {
+    filter: brightness(0.95);
+}
+
+.voltar {
+    margin-top: 18px;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Tela do Pix */
+.caixa-qr {
+    width: 300px;
+    margin: 0 auto 20px;
+    padding: 50px;
+    border-radius: 18px;
+    background-color: #a9bebe;
+}
+
+.caixa-qr svg {
+    width: 100%;
+    display: block;
+}
+
+.pagina-pix h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.pagina-pix p {
+    font-size: 14px;
+}
+
+.caixa-copia {
+    margin: 26px 0 10px;
+    padding: 18px 24px 24px;
+    border-radius: 18px;
+    background-color: #d3e6e2;
+    text-align: left;
+}
+
+.caixa-copia h3 {
+    font-size: 18px;
+}
+
+.codigo {
+    margin: 12px 0 18px;
+    font-size: 14px;
+    word-break: break-all;
+    color: #333;
+}
+
+.botao-copiar {
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-radius: 12px;
+    background-color: #333;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.aguardando {
+    margin-top: 10px;
+}
